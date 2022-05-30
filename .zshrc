@@ -105,8 +105,13 @@ source $HOME/.cargo/env
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/racket/bin
 export PATH=$PATH:$HOME/clangd/clangd_13.0.0/bin
+export PATH=$PATH:$HOME/maven/apache-maven-3.8.4/bin
+export BDB_PREFIX='/home/kjain1810/Desktop/padhai/blockchains/bitcoin-23.0/db4'
 
 # ALIASES
 alias vimt='vim -c "NERDTree" $1'
 alias nvimt='nvim -c "NERDTree" $1'
 alias git-untracked-files='git ls-files --others --exclude-standard'
+alias ppt-to-pdf='libreoffice --headless --invisible --convert-to pdf $@'
+alias ssh="kitty +kitten ssh"
+alias google-chrome="google-chrome --password-store=gnome"

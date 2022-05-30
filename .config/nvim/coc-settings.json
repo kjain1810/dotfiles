@@ -1,0 +1,4 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["c", "cpp", "python", "rust", "javascript", "java"],
+  "clangd.arguments": ["--clang-tidy"]
+}
