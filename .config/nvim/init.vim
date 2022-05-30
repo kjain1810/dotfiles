@@ -9,7 +9,7 @@ inoremap jk <Esc>
 " Some needed settings
 set number
 set encoding=utf8
-set colorcolumn=80 tabstop=2 shiftwidth=2 softtabstop=2
+set tabstop=2 shiftwidth=2 softtabstop=2
 set showcmd
 set expandtab
 set autoread
@@ -110,8 +110,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Check the plugin status：:PlugStatus
 " Upgrade vim-plug itself：:PlugUpgrade
 
-" Gruvbox theme
-Plug 'gruvbox-community/gruvbox'
+" Theme
+" Plug 'gruvbox-community/gruvbox'
+" Plug 'elvessousa/sobrio'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 " Airline status bar
 Plug 'vim-airline/vim-airline'
@@ -163,17 +165,35 @@ Plug 'wlangstroth/vim-racket'
 " Vim rust
 Plug 'rust-lang/rust.vim'
 
+" Vim java foldings
+Plug 'vim-scripts/java_fold'
+
+" Vim tex
+Plug 'lervag/vimtex'
+
+" Vim startify
+Plug 'mhinz/vim-startify'
+
+" Vim GitGutter
+Plug 'airblade/vim-gitgutter'
+
+" context.nvim
+Plug 'wellle/context.vim'
+
+" Vim Fugitive
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 " Colorscheme settings
 let t_Co=256
 set notermguicolors
-let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark='soft'
-colorscheme gruvbox
+" let g:gruvbox_italic=1
+" let g:gruvbox_contrast_dark='soft'
+colorscheme onehalfdark
 
 " Airline settings
-let g:airline_theme='gruvbox'
+let g:airline_theme='onehalfdark'
 let g:airline#extensions#tabline#enabled = 1
 
 " Open vertical terminal on f5
